@@ -79,7 +79,7 @@ function displayResult(data){
     let currentStatus = data.weather[0].description;
 
     if(currentStatus.includes("clear sky")){
-        image.setAttribute("src", "css/clear-sky.png");
+        image.setAttribute("src", "css/sun.png");
     }else if(currentStatus.includes("few clouds")){
         image.setAttribute("src", "css/few-clouds.png");
     }else if(currentStatus.includes("broken clouds")){
