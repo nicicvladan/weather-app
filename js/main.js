@@ -25,7 +25,7 @@ function showWeather(e){
         let city = cityInput.value;
         console.log(city.length);
         if (city.length > 13) {
-            cityInput.style.fontSize = '25px';
+            cityInput.style.fontSize = '18px';
         }
    
         let xml = new XMLHttpRequest();
