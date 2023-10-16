@@ -15,12 +15,19 @@ let image = document.querySelector(".image");
 
 
 
+
+
 cityInput.addEventListener("keyup", showWeather);
 
 function showWeather(e){
 
      if(e.keyCode === 13){
         let city = cityInput.value;
+        console.log(city.length);
+        if (city.length > 13) {
+            cityInput.style.fontSize = '25px';
+        }
+   
         let xml = new XMLHttpRequest();
         xml.open(
             "GET",
@@ -34,6 +41,9 @@ function showWeather(e){
         xml.send();
      }
 }
+
+
+
 
 function displayResult(data){
     let date = new Date();
